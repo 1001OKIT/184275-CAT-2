@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             }
 
-            alert("Message sent successfully!");
+            document.getElementById("successMessage").classList.remove("d-none");
 
             form.reset();
 
