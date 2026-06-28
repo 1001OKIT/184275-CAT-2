@@ -1,579 +1,366 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Cars - 2GoRides</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-
-</head>
-
-<body>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
-    <div class="container">
-
-        <a class="navbar-brand" href="index.html">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Cars - 2GoRides</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+         <div class="container">
+            <a class="navbar-brand" href="index.html">
             2GoRides
-        </a>
-
-        <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
-
+            </a>
+            <button class="navbar-toggler"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
-
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-
-            <ul class="navbar-nav ms-auto">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link active" href="cars.html">Cars</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">Gallery</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="faq.html">FAQ</a>
-                </li>
-
-            </ul>
-
-            <button id="darkModeBtn"
-                    class="btn btn-outline-light ms-3">
-
-                Dark Mode
-
             </button>
-
-        </div>
-
-    </div>
-
-</nav>
-
-<section class="bg-light py-5">
-
-    <div class="container text-center">
-
-        <h1 class="display-4">
-
-            Our Vehicle Inventory
-
-        </h1>
-
-        <p class="lead">
-
-            Discover quality vehicles at affordable prices.
-
-        </p>
-
-    </div>
-
-</section>
-
-<div class="container my-4">
-
-    <div class="alert alert-primary text-center">
-
-        <strong>10 Vehicles Available</strong><br>
-
-        Browse our latest arrivals and premium collection.
-
-    </div>
-
-</div>
-
-<div class="container mb-5">
-
-    <div class="row mb-4">
-
-        <div class="col-md-6 mx-auto">
-
-            <input
-                type="text"
-                id="searchInput"
-                class="form-control form-control-lg"
-                placeholder="Search by car name...">
-
-        </div>
-
-    </div>
-
-    <div class="row g-4">
-
-        <!-- Toyota Corolla -->
-
-        <div class="col-lg-4 col-md-6 car-item">
-
-            <div class="card h-100 shadow">
-
-                <img src="cars/corolla.jpg"
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" href="cars.html">Cars</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="about.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="faq.html">FAQ</a>
+                  </li>
+               </ul>
+               <button id="darkModeBtn"
+                  class="btn btn-outline-light ms-3">
+               Dark Mode
+               </button>
+            </div>
+         </div>
+      </nav>
+      <section class="bg-light py-5">
+         <div class="container text-center">
+            <h1 class="display-4">
+               Our Vehicle Inventory
+            </h1>
+            <p class="lead">
+               Discover quality vehicles at affordable prices.
+            </p>
+         </div>
+      </section>
+      <div class="container mb-5">
+         <div class="row mb-4">
+            <div class="col-md-6 mx-auto">
+               <input
+                  type="text"
+                  id="searchInput"
+                  class="form-control form-control-lg"
+                  placeholder="Search by car name...">
+            </div>
+         </div>
+         <div class="row g-4">
+            <!-- Toyota Corolla -->
+            <div class="col-lg-4 col-md-6 car-item">
+               <div class="card h-100 shadow">
+                  <img src="cars/corolla.jpg"
                      class="card-img-top"
                      alt="Toyota Corolla">
-
-                <div class="card-body">
-
-                    <h4 class="card-title">
+                  <div class="card-body">
+                     <h4 class="card-title">
                         Toyota Corolla
-                    </h4>
-
-                    <p class="text-muted">
+                     </h4>
+                     <p class="text-muted">
                         2023 • Automatic • Petrol
-                    </p>
-
-                    <span class="badge bg-success">
-                        Fuel Efficient
-                    </span>
-
-                    <h3 class="text-primary mt-3">
+                     </p>
+                     <span class="badge bg-success">
+                     Fuel Efficient
+                     </span>
+                     <h3 class="text-primary mt-3">
                         $18,000
-                    </h3>
-
-                    <a href="car-details.html"
-                       class="btn btn-primary w-100 mt-3">
-                        View Details
-                    </a>
-
-                </div>
-
+                     </h3>
+                     <a href="car-details.html"
+                        class="btn btn-primary w-100 mt-3">
+                     View Details
+                     </a>
+                  </div>
+               </div>
             </div>
-
-        </div>
-
-        <!-- Honda Civic -->
-
-        <div class="col-lg-4 col-md-6 car-item">
-
-            <div class="card h-100 shadow">
-
-                <img src="cars/civic.jpg"
+            <!-- Honda Civic -->
+            <div class="col-lg-4 col-md-6 car-item">
+               <div class="card h-100 shadow">
+                  <img src="cars/civic.jpg"
                      class="card-img-top"
                      alt="Honda Civic">
-
-                <div class="card-body">
-
-                    <h4 class="card-title">
+                  <div class="card-body">
+                     <h4 class="card-title">
                         Honda Civic
-                    </h4>
-
-                    <p class="text-muted">
+                     </h4>
+                     <p class="text-muted">
                         2023 • Automatic • Petrol
-                    </p>
-
-                    <span class="badge bg-info">
-                        Popular
-                    </span>
-
-                    <h3 class="text-primary mt-3">
+                     </p>
+                     <span class="badge bg-info">
+                     Popular
+                     </span>
+                     <h3 class="text-primary mt-3">
                         $24,000
-                    </h3>
-
-                    <a href="car-details.html"
-                       class="btn btn-primary w-100 mt-3">
-                        View Details
-                    </a>
-
-                </div>
-
+                     </h3>
+                     <a href="car-details.html"
+                        class="btn btn-primary w-100 mt-3">
+                     View Details
+                     </a>
+                  </div>
+               </div>
             </div>
-
-        </div>
-
-        <!-- BMW X5 -->
-
-        <div class="col-lg-4 col-md-6 car-item">
-
-            <div class="card h-100 shadow">
-
-                <img src="cars/bmw-x5.jpg"
+            <!-- BMW X5 -->
+            <div class="col-lg-4 col-md-6 car-item">
+               <div class="card h-100 shadow">
+                  <img src="cars/bmw-x5.jpg"
                      class="card-img-top"
                      alt="BMW X5">
-
-                <div class="card-body">
-
-                    <h4 class="card-title">
+                  <div class="card-body">
+                     <h4 class="card-title">
                         BMW X5
-                    </h4>
-
-                    <p class="text-muted">
+                     </h4>
+                     <p class="text-muted">
                         2022 • Automatic • Diesel
-                    </p>
-
-                    <span class="badge bg-warning text-dark">
-                        New Arrival
-                    </span>
-
-                    <h3 class="text-primary mt-3">
+                     </p>
+                     <span class="badge bg-warning text-dark">
+                     New Arrival
+                     </span>
+                     <h3 class="text-primary mt-3">
                         $45,000
-                    </h3>
-
-                    <a href="car-details.html"
-                       class="btn btn-primary w-100 mt-3">
-                        View Details
-                    </a>
-
-                </div>
-
+                     </h3>
+                     <a href="car-details.html"
+                        class="btn btn-primary w-100 mt-3">
+                     View Details
+                     </a>
+                  </div>
+               </div>
             </div>
-
-        </div>
-
-        <!-- Mercedes C-Class -->
-
-        <div class="col-lg-4 col-md-6 car-item">
-
-            <div class="card h-100 shadow">
-
-                <img src="cars/cclass.jpg"
+            <!-- Mercedes C-Class -->
+            <div class="col-lg-4 col-md-6 car-item">
+               <div class="card h-100 shadow">
+                  <img src="cars/cclass.jpg"
                      class="card-img-top"
                      alt="Mercedes C-Class">
-
-                <div class="card-body">
-
-                    <h4 class="card-title">
+                  <div class="card-body">
+                     <h4 class="card-title">
                         Mercedes C-Class
-                    </h4>
-
-                    <p class="text-muted">
+                     </h4>
+                     <p class="text-muted">
                         2023 • Automatic • Petrol
-                    </p>
-
-                    <span class="badge bg-dark">
-                        Premium
-                    </span>
-
-                    <h3 class="text-primary mt-3">
+                     </p>
+                     <span class="badge bg-dark">
+                     Premium
+                     </span>
+                     <h3 class="text-primary mt-3">
                         $39,000
-                    </h3>
-
-                    <a href="car-details.html"
-                       class="btn btn-primary w-100 mt-3">
-                        View Details
-                    </a>
-
-                </div>
-
+                     </h3>
+                     <a href="car-details.html"
+                        class="btn btn-primary w-100 mt-3">
+                     View Details
+                     </a>
+                  </div>
+               </div>
             </div>
-
-        </div>
-
-        <!-- Audi A4 -->
-
-        <div class="col-lg-4 col-md-6 car-item">
-
-            <div class="card h-100 shadow">
-
-                <img src="cars/audi-a4.jpg"
+            <!-- Audi A4 -->
+            <div class="col-lg-4 col-md-6 car-item">
+               <div class="card h-100 shadow">
+                  <img src="cars/audi-a4.jpg"
                      class="card-img-top"
                      alt="Audi A4">
-
-                <div class="card-body">
-
-                    <h4 class="card-title">
+                  <div class="card-body">
+                     <h4 class="card-title">
                         Audi A4
-                    </h4>
-
-                    <p class="text-muted">
+                     </h4>
+                     <p class="text-muted">
                         2022 • Automatic • Petrol
-                    </p>
-
-                    <span class="badge bg-danger">
-                        Limited Stock
-                    </span>
-
-                    <h3 class="text-primary mt-3">
+                     </p>
+                     <span class="badge bg-danger">
+                     Limited Stock
+                     </span>
+                     <h3 class="text-primary mt-3">
                         $36,500
-                    </h3>
-
-                    <a href="car-details.html"
-                       class="btn btn-primary w-100 mt-3">
-                        View Details
-                    </a>
-
-                </div>
-
+                     </h3>
+                     <a href="car-details.html"
+                        class="btn btn-primary w-100 mt-3">
+                     View Details
+                     </a>
+                  </div>
+               </div>
             </div>
-
-        </div>
-                <!-- Ford Mustang -->
-
-        <div class="col-lg-4 col-md-6 car-item">
-
-            <div class="card h-100 shadow">
-
-                <img src="cars/mustang.jpg"
+            <!-- Ford Mustang -->
+            <div class="col-lg-4 col-md-6 car-item">
+               <div class="card h-100 shadow">
+                  <img src="cars/mustang.jpg"
                      class="card-img-top"
                      alt="Ford Mustang">
-
-                <div class="card-body">
-
-                    <h4 class="card-title">
+                  <div class="card-body">
+                     <h4 class="card-title">
                         Ford Mustang
-                    </h4>
-
-                    <p class="text-muted">
+                     </h4>
+                     <p class="text-muted">
                         2022 • Manual • Petrol
-                    </p>
-
-                    <span class="badge bg-warning text-dark">
-                        Best Seller
-                    </span>
-
-                    <h3 class="text-primary mt-3">
+                     </p>
+                     <span class="badge bg-warning text-dark">
+                     Best Seller
+                     </span>
+                     <h3 class="text-primary mt-3">
                         $35,000
-                    </h3>
-
-                    <a href="car-details.html"
-                       class="btn btn-primary w-100 mt-3">
-                        View Details
-                    </a>
-
-                </div>
-
+                     </h3>
+                     <a href="car-details.html"
+                        class="btn btn-primary w-100 mt-3">
+                     View Details
+                     </a>
+                  </div>
+               </div>
             </div>
-
-        </div>
-
-        <!-- Chevrolet Camaro -->
-
-        <div class="col-lg-4 col-md-6 car-item">
-
-            <div class="card h-100 shadow">
-
-                <img src="cars/camaro.jpg"
+            <!-- Chevrolet Camaro -->
+            <div class="col-lg-4 col-md-6 car-item">
+               <div class="card h-100 shadow">
+                  <img src="cars/camaro.jpg"
                      class="card-img-top"
                      alt="Chevrolet Camaro">
-
-                <div class="card-body">
-
-                    <h4 class="card-title">
+                  <div class="card-body">
+                     <h4 class="card-title">
                         Chevrolet Camaro
-                    </h4>
-
-                    <p class="text-muted">
+                     </h4>
+                     <p class="text-muted">
                         2023 • Automatic • Petrol
-                    </p>
-
-                    <span class="badge bg-danger">
-                        Sports Edition
-                    </span>
-
-                    <h3 class="text-primary mt-3">
+                     </p>
+                     <span class="badge bg-danger">
+                     Sports Edition
+                     </span>
+                     <h3 class="text-primary mt-3">
                         $41,000
-                    </h3>
-
-                    <a href="car-details.html"
-                       class="btn btn-primary w-100 mt-3">
-                        View Details
-                    </a>
-
-                </div>
-
+                     </h3>
+                     <a href="car-details.html"
+                        class="btn btn-primary w-100 mt-3">
+                     View Details
+                     </a>
+                  </div>
+               </div>
             </div>
-
-        </div>
-
-        <!-- Nissan GT-R -->
-
-        <div class="col-lg-4 col-md-6 car-item">
-
-            <div class="card h-100 shadow">
-
-                <img src="cars/gtr.jpg"
+            <!-- Nissan GT-R -->
+            <div class="col-lg-4 col-md-6 car-item">
+               <div class="card h-100 shadow">
+                  <img src="cars/gtr.jpg"
                      class="card-img-top"
                      alt="Nissan GT-R">
-
-                <div class="card-body">
-
-                    <h4 class="card-title">
+                  <div class="card-body">
+                     <h4 class="card-title">
                         Nissan GT-R
-                    </h4>
-
-                    <p class="text-muted">
+                     </h4>
+                     <p class="text-muted">
                         2023 • Automatic • Twin Turbo
-                    </p>
-
-                    <span class="badge bg-dark">
-                        Supercar
-                    </span>
-
-                    <h3 class="text-primary mt-3">
+                     </p>
+                     <span class="badge bg-dark">
+                     Supercar
+                     </span>
+                     <h3 class="text-primary mt-3">
                         $72,000
-                    </h3>
-
-                    <a href="car-details.html"
-                       class="btn btn-primary w-100 mt-3">
-                        View Details
-                    </a>
-
-                </div>
-
+                     </h3>
+                     <a href="car-details.html"
+                        class="btn btn-primary w-100 mt-3">
+                     View Details
+                     </a>
+                  </div>
+               </div>
             </div>
-
-        </div>
-
-        <!-- Toyota Prado -->
-
-        <div class="col-lg-4 col-md-6 car-item">
-
-            <div class="card h-100 shadow">
-
-                <img src="cars/prado.jpeg"
+            <!-- Toyota Prado -->
+            <div class="col-lg-4 col-md-6 car-item">
+               <div class="card h-100 shadow">
+                  <img src="cars/prado.jpeg"
                      class="card-img-top"
                      alt="Toyota Prado">
-
-                <div class="card-body">
-
-                    <h4 class="card-title">
+                  <div class="card-body">
+                     <h4 class="card-title">
                         Toyota Prado
-                    </h4>
-
-                    <p class="text-muted">
+                     </h4>
+                     <p class="text-muted">
                         2022 • Automatic • Diesel
-                    </p>
-
-                    <span class="badge bg-success">
-                        4x4 SUV
-                    </span>
-
-                    <h3 class="text-primary mt-3">
+                     </p>
+                     <span class="badge bg-success">
+                     4x4 SUV
+                     </span>
+                     <h3 class="text-primary mt-3">
                         $56,000
-                    </h3>
-
-                    <a href="car-details.html"
-                       class="btn btn-primary w-100 mt-3">
-                        View Details
-                    </a>
-
-                </div>
-
+                     </h3>
+                     <a href="car-details.html"
+                        class="btn btn-primary w-100 mt-3">
+                     View Details
+                     </a>
+                  </div>
+               </div>
             </div>
-
-        </div>
-
-        <!-- Rolls Royce -->
-
-        <div class="col-lg-4 col-md-6 car-item">
-
-            <div class="card h-100 shadow">
-
-                <img src="cars/rolls.jpg"
+            <!-- Rolls Royce -->
+            <div class="col-lg-4 col-md-6 car-item">
+               <div class="card h-100 shadow">
+                  <img src="cars/rolls.jpg"
                      class="card-img-top"
                      alt="Rolls Royce">
-
-                <div class="card-body">
-
-                    <h4 class="card-title">
+                  <div class="card-body">
+                     <h4 class="card-title">
                         Rolls-Royce Ghost
-                    </h4>
-
-                    <p class="text-muted">
+                     </h4>
+                     <p class="text-muted">
                         2024 • Automatic • V12
-                    </p>
-
-                    <span class="badge bg-secondary">
-                        Luxury
-                    </span>
-
-                    <h3 class="text-primary mt-3">
+                     </p>
+                     <span class="badge bg-secondary">
+                     Luxury
+                     </span>
+                     <h3 class="text-primary mt-3">
                         $185,000
-                    </h3>
-
-                    <a href="car-details.html"
-                       class="btn btn-primary w-100 mt-3">
-                        View Details
-                    </a>
-
-                </div>
-
+                     </h3>
+                     <a href="car-details.html"
+                        class="btn btn-primary w-100 mt-3">
+                     View Details
+                     </a>
+                  </div>
+               </div>
             </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-<section class="bg-primary text-white py-5">
-
-    <div class="container text-center">
-
-        <h2>
-            Can't Find Your Dream Car?
-        </h2>
-
-        <p class="lead">
-
-            Contact our sales team and we'll help you find the perfect vehicle that suits your needs and budget.
-
-        </p>
-
-        <a href="contact.html"
-           class="btn btn-light btn-lg">
-
+         </div>
+      </div>
+      <section class="bg-primary text-white py-5">
+         <div class="container text-center">
+            <h2>
+               Can't Find Your Dream Car?
+            </h2>
+            <p class="lead">
+               Contact our sales team and we'll help you find the perfect vehicle that suits your needs and budget.
+            </p>
+            <a href="contact.html"
+               class="btn btn-light btn-lg">
             Contact Our Team
-
-        </a>
-
-    </div>
-
-</section>
-
-<footer class="bg-dark text-white mt-5">
-
-    <div class="container text-center py-4">
-
-        <h4>
-            2GoRides
-        </h4>
-
-        <p>
-
-            Your trusted dealership for quality vehicles, affordable prices, and exceptional customer service.
-
-        </p>
-
-        <p class="mb-0">
-
-            © 2025 2GoRides. All Rights Reserved.
-
-        </p>
-
-    </div>
-
-</footer>
-
-<script src="script.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
+            </a>
+         </div>
+      </section>
+      <footer class="bg-dark text-white mt-5">
+         <div class="container text-center py-4">
+            <h4>
+               2GoRides
+            </h4>
+            <p>
+               Your trusted dealership for quality vehicles, affordable prices, and exceptional customer service.
+            </p>
+            <p class="mb-0">
+               © 2026 2GoRides. All Rights Reserved.
+            </p>
+         </div>
+      </footer>
+      <script src="script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+   </body>
 </html>

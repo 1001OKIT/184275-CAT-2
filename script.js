@@ -1,47 +1,37 @@
-// 2GoRides JavaScript
 document.addEventListener("DOMContentLoaded", function () {
+// DARK 
+const darkModeBtn = document.getElementById("darkModeBtn");
 
-    // DARK MODE
-    const darkModeBtn = document.getElementById("darkModeBtn");
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
 
     if (darkModeBtn) {
-
-        darkModeBtn.addEventListener("click", function () {
-
-            document.body.classList.toggle("bg-dark");
-            document.body.classList.toggle("text-white");
-
-            // Cards
-
-            document.querySelectorAll(".card").forEach(function(card){
-
-                card.classList.toggle("bg-dark");
-                card.classList.toggle("text-white");
-
-            });
-
-            // Tables
-
-            document.querySelectorAll(".table").forEach(function(table){
-
-                table.classList.toggle("table-dark");
-
-            });
-
-            // Sections
-
-            document.querySelectorAll("section").forEach(function(section){
-
-                section.classList.toggle("bg-dark");
-                section.classList.toggle("text-white");
-
-            });
-
-        });
-
+        darkModeBtn.innerHTML = "Light Mode";
     }
+}
 
-     // LIVE SEARCH
+if (darkModeBtn) {
+
+    darkModeBtn.addEventListener("click", function () {
+
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+
+            localStorage.setItem("theme", "dark");
+            darkModeBtn.innerHTML = "Light Mode";
+
+        } else {
+
+            localStorage.setItem("theme", "light");
+            darkModeBtn.innerHTML = "Dark Mode";
+
+        }
+
+    });
+
+}
+// LIVE SEARCH
        const searchInput = document.getElementById("searchInput");
 
     if(searchInput){
@@ -76,9 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     }
-
-    // CONTACT FORM VALIDATION
-  
+// CONTACT FORM
     const form =
         document.getElementById("contactForm");
 
